@@ -214,7 +214,7 @@ h5 {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .navbar .navbar-logo {
         display: none;
     }
@@ -226,7 +226,7 @@ h5 {
     }  
 
     .navbar .navbar-options a {
-        font-size: 0.75rem;
+        font-size: 2rem;
     }
 }
 
@@ -317,10 +317,30 @@ section {
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .hero .hero-text {
         width: 90%;
     }  
+
+    .hero .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero .hero-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero .hero-footer {
+        display: none;
+    }
+    
+    #icon i{
+        font-size: 3.5rem;
+    }
+
+    #icon:hover > .reveal {
+        display: none;
+    }
 }
 
 .section-content {
@@ -328,6 +348,8 @@ section {
     height: 75vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
  
 .projects-header {
@@ -464,9 +486,14 @@ section {
     animation: reduce-height 1.5s forwards;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .section-content {
-        width: 90%;
+        width: 95%;
+    }
+
+    .projects-header h1 {
+        font-size: 2.25rem;
+        margin-bottom: 0.25rem;
     }
 
     .projects-text .project-item{
@@ -475,7 +502,7 @@ section {
 
     .projects-text .project-item .project-item-text .project-item-text-body p {
         width: 90%;
-        font-size: 0.75rem;
+        font-size: 1.25rem;
     }
 
     .animate {
@@ -488,11 +515,11 @@ section {
     }
 
     .projects-text .project-item .project-item-text .project-item-text-header a {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
     }
 
     .projects-text .project-item .project-item-text .project-item-text-header p {
-        font-size: 0.75rem;
+        font-size: 1.5rem;
         margin-left: 0.25rem;
     }
 
@@ -554,7 +581,7 @@ section {
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .skills-text .skills-text-languages,
     .skills-text .skills-text-technologies {
         text-align: center;
@@ -578,7 +605,7 @@ section {
     }
 
     .skills-text ul.cloud li {
-        font-size: 0.75rem;
+        font-size: 2rem;
     }
 
     .skills-text ul.cloud {
@@ -784,7 +811,7 @@ section {
     color: var(--text-colour-dark-2);
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
     .education-content {
         width: 90%;
     }
@@ -800,7 +827,11 @@ section {
     .education-box-1 .education-box-header h3,
     .education-box-2 .education-box-header h3,
     .education-box-3 .education-box-header h3 {
-        font-size: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .education-box-1, .education-box-2 {
+        height: 20rem;
     }
 
     .education-content .courses {
@@ -929,4 +960,30 @@ section {
     color: var(--text-paragraph);
     font-size: 1rem;
     font-weight: 100;
+}
+
+@media screen and (max-width: 900px) {
+    .experience-header h1{
+        font-size: 2.25rem;
+    }
+
+    .experience-item .experience-item-header h2{
+         font-size: 2rem;
+    }
+
+    .experience-item .experience-item-content h3{
+        font-size: 1.5rem;
+    }
+
+    .experience-item .experience-item-content p  {      
+        font-size: 1.5rem;
+    }
+
+    .experience-hire h1 {
+        font-size: 2rem;
+    }
+
+    .experience-hire h3 {
+        font-size: 1.5rem;
+    }
 }
