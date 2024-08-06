@@ -226,7 +226,7 @@ h5 {
     }  
 
     .navbar .navbar-options a {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -335,7 +335,7 @@ section {
     }
     
     #icon i{
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
 
     #icon:hover > .reveal {
@@ -502,7 +502,7 @@ section {
 
     .projects-text .project-item .project-item-text .project-item-text-body p {
         width: 90%;
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .animate {
