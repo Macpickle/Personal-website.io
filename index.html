@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Dylan MacLeod</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel = "icon" href="assets/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class = "main-container">
+        <div class = "navbar">
+            <div class = "navbar-name">
+                <h1>Dylan MacLeod</h1>
+            </div>
+            <div class = "navbar-options">
+                <div class = "navbar-option">
+                    <a onclick = "showPage('home')">HOME</a>
+                </div>
+                <div class = "navbar-option">
+                    <a onclick = "showPage('projects')">PROJECTS</a>
+                </div>
+                <div class = "navbar-option">
+                    <a onclick = "showPage('education')">EDUCATION</a>
+                </div>
+            </div>
+            <div class = "navbar-hamburger">
+                <input type="checkbox" id="hamburger-checkbox" class="hamburger-checkbox">
+                <label for="hamburger-checkbox" class="hamburger-button">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <div class = "hamburger-options">
+                    <div class = "hamburger-option">
+                        <a onclick = "showPage('home')">HOME</a>
+                    </div>
+                    <div class = "hamburger-option">
+                        <a onclick = "showPage('projects')">PROJECTS</a>
+                    </div>
+                    <div class = "hamburger-option">
+                        <a onclick = "showPage('education')">EDUCATION</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "main-content" id = "home">
+            <div class = "header">
+                <h2>Hey, I'm Dylan!</h2>
+            </div>
+            <div class = "content">
+                <p>
+                    I am a full-stack developer, currently studying at <a href = "https://ontariotechu.ca/">Ontario Tech University</a>
+                </p>
+                <p>
+                    Looking for any 2025 internships or co-op opportunities!
+                </p>
+            </div>
+            <div class = "links">
+                <div class = "tooltip">
+                    <div class = "link">
+                        <a href = "https://github.com/Macpickle">
+                            <i class="fab fa-github"></i>
+                        </a> 
+                    </div>
+                    <span class = "tooltiptext">Github</span>
+                </div>
+                <div class = "tooltip">
+                    <div class = "link">
+                        <a href = "https://www.linkedin.com/in/dylan-macleod-b167b02ba/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <span class = "tooltiptext">LinkedIn</span>
+                </div>
+                <div class = "tooltip">
+                    <div class = "link">
+                        <a href = "mailto:dylanmacleod2005@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <span class = "tooltiptext">Mail</span>
+                </div>
+                <div class = "tooltip">
+                    <div class = "link">
+                        <a href = "./assets/CS resume.docx" download = "CS resume">
+                            <i class="fas fa-file-download"></i>
+                        </a>
+                    </div>
+                    <span class = "tooltiptext">Resume</span>
+                </div>
+            </div>
+        </div>
+
+        <div class = "main-content" id = "projects">
+            <!--https://github.com/Macpickle/Chatroom-REACT-->
+            <button class = "project" onclick="window.open('https://github.com/Macpickle/Chatroom-REACT')">
+                <div class = "reveal">
+                    <div class = "project-header">
+                        <h2>Chatroom + Chatbot</h2>
+                        <div class = "project-subheader">
+                            <p>Full-Stack React Application</p>
+                        </div>
+                    </div>
+                    <div class = "project-content">
+                        <p>
+                            A basic chatroom application that allows users to add one another and communicate in real-time, with the added feature of a chatbot.
+                        </p>
+                        <p>
+                            Makes use of <span>MongoDB</span>, <span>Websockets</span>, <span>ExpressJS</span>, <span>Imgur API</span>,  and more.
+                        </p>
+                        <div class = "project-logos">
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-react"></i>
+                            <i class="fab fa-node-js"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                    </div>
+                    <div class = "project-footer">
+                        <p>Click to view the project on Github</p>
+                    </div>
+                </div>
+            </button>
+
+            <!--https://github.com/Macpickle/CarSpotters-->
+            <button class="project" onclick="window.open('https://github.com/Macpickle/CarSpotters')">
+                <div class = "reveal">
+                    <div class = "project-header">
+                        <h2>CarSpotters</h2>
+                        <div class = "project-subheader">
+                            <p>Full-Stack Web Application</p>
+                        </div>
+                    </div>
+                    <div class = "project-content">
+                        <p>
+                           A social media website designed for car enthusiasts to post, share and discuss cars they spot in the real world.
+                        </p>
+                        <p>
+                            Makes use of <span>MongoDB</span>, <span>ExpressJS</span>, <span>Imgur API</span>, <span>BingMaps API</span>, and more.
+                        </p>
+                        <div class = "project-logos">
+                            <i class="fab fa-js"></i>
+                            <i class="fab fa-node-js"></i>
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                    </div>
+                    <div class = "project-footer">
+                        <p>Click to view the project on Github</p>
+                    </div>
+                </div>
+            </button>
+            <!--https://github.com/Macpickle/Arduino-Weather-Sensor-Reader-->
+            <button class = "project" onclick="window.open('https://github.com/Macpickle/Arduino-Weather-Sensor-Reader')">
+                <div class = "reveal">
+                    <div class = "project-header">
+                        <h2>Arduino Weather Sensor Reader</h2>
+                        <div class = "project-subheader">
+                            <p>Arduino Project</p>
+                        </div>
+                    </div>
+                    <div class = "project-content">
+                        <p>
+                            An Arduino project that reads real-time weather data from a sensor and displays it on an LCD screen.
+                        </p>
+                        <p>
+                            It also stores the data onto the onboard card for analysis later.
+                        </p>
+                        <p>
+                            Makes use of <span>Arduino IDE</span>, <span>Arduino Uno</span>, <span>Adafruit Sensor</span>, and more.
+                        </p>
+                        <div class = "project-logos">
+                            <p>C++</p>
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                    </div>
+                    <div class = "project-footer">
+                        <p>Click to view the project on Github</p>
+                    </div>
+                </div>
+            </button>
+        </div>
+
+        <div class = "main-content" id = "education">
+            <div class = "stripes">
+                <div class = "stripe" ></div>
+                <div class = "stripe" ></div>
+                <div class = "stripe" ></div>
+            </div>
+
+            <div class = "box" id = "university">
+                <div class = "box-header">
+                    <h2>Ontario Tech University</h2>
+                    <p>2023 - present</p>
+                </div>
+                <div class = "box-content">
+                    <p>
+                        Currently studying at Ontario Tech University, working towards a Bachelor of Science in Computer Science.
+                    </p>
+
+                    <div class = "box-courses">
+                        <h2>Relevent Courses</h2>
+                        <p>Data Structures <span>Java</span></p>
+                        <p>Software Design and Analysis <span>Java</span></p>
+                        <p>Intro to Computer Science <span>Python</span></p>
+                        <p>Programming Workshop I & II <span>C++</span></p>
+                        <p>Computer Architecture <span>x86</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class = "box">
+                <div class = "box-header" style = "text-align: center;">
+                    <h2>Languages/Tools</h2>
+                    <div class = "languages">
+                        <i class="fab fa-python"></i>
+                        <p>C++</p>
+                        <i class="fab fa-java"></i>
+                        <i class="fab fa-js"></i>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class = "languages">
+                        <i class="fab fa-react"></i>
+                        <i class="fa-brands fa-node"></i>
+                        <i class="fab fa-git-alt"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fa-brands fa-raspberry-pi"></i>
+                        <i class="fa-brands fa-npm"></i>
+                    </div>
+                </div>
+                <div class = "box-add">
+                    <p>+</p>
+                </div>
+                <div class = "box-extras">
+                    <p>MongoDB</p>
+                    <p>Websockets</p>
+                    <p>Pandas</p>
+                    <p>Matplotlib</p>
+                    <p>ExpessJS</p>
+                    <p>Passport.JS</p>
+                    <p>Bcrypt / Hashing</p>
+                    <p>Azure</p>
+                    <p>Google Developer Console</p>
+                    <p>Google Generative AI</p>
+                    <p>and more...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class = "footer">
+            <p>@2024 Dylan MacLeod</p>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/a74a21bfbd.js" crossorigin="anonymous"></script>
+<script>
+    function showPage(page) {
+        var pages = document.getElementsByClassName("main-content");
+        for (var i = 0; i < pages.length; i++) {
+            pages[i].style.display = "none";
+        }
+        document.getElementById(page).style.display = "flex";
+    }
+</script>
+</html> 
