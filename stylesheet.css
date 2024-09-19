@@ -136,7 +136,7 @@ p, h1, h2, h3 {
 }
 
 .navbar .navbar-hamburger .hamburger-button:active {
-    transform: scale(0.9);
+    transform: scale(0.9);;
 }
 
 .hamburger-options {
@@ -147,10 +147,25 @@ p, h1, h2, h3 {
     text-align: right;
     display: none;
     overflow: hidden;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
 }
 
 .hamburger-checkbox:checked ~ .hamburger-options {
-    display: block;
+    display: flex;
+}
+
+.hamburger-option-container {
+    width: fit-content;
+}
+
+.hamburger-options .hamburger-option {
+    background-color: #1e2129b3;
+    margin-right: 0.5rem;
+    border: 1px solid var(--highlight);
+    width: 100%;
 }
 
 .hamburger-options .hamburger-option a {
@@ -333,21 +348,21 @@ p, h1, h2, h3 {
 }
 
 .main-container .main-content .project .project-header {
-    font-size: min(1.5rem, 1.5vw);
+    font-size: min(1.5rem, 2.5vw);
     font-weight: 500;
     color: var(--header);
     margin-bottom: 0.5rem;
 }
 
 .main-container .main-content .project .project-header .project-subheader {
-    font-size: 1rem;
+    font-size: min(1rem, 2vw);
     font-weight: 100;
     color: var(--subheader);
     margin-left: 1rem;
 }
 
 .main-container .main-content .project .project-content {
-    font-size: 1rem;
+    font-size: min(1rem, 2.5vw);
     font-weight: 100;
     color: var(--paragraph);
     height: fit-content;
@@ -416,14 +431,14 @@ p, h1, h2, h3 {
 }
 
 .main-container .main-content .box .box-header p {
-    font-size: 1rem;
+    font-size: min(1.25rem, 3vw);
     font-weight: 100;
     color: var(--header);
     text-shadow: 0px 0px 1px black;
 }
 
 .main-container .main-content .box .box-content {
-    font-size: 1rem;
+    font-size: min(1rem, 3vw);
     font-weight: 100;
     color: var(--paragraph2);
     height: 100%;
@@ -441,10 +456,12 @@ p, h1, h2, h3 {
 
 .main-container .main-content .box .box-content .box-courses p {
     margin-left: 0.25rem;
+    font-size: min(1rem, 3vw);
 }
 
 .main-container .main-content .box .box-content .box-courses h2 {
     color: var(--text);
+    font-size: min(1.5rem, 4vw);
 }
 
 .main-container .main-content .box .box-content .box-courses span {
@@ -465,7 +482,7 @@ p, h1, h2, h3 {
 
 .main-container .main-content .box .languages p {
     color: var(--text);
-    font-size: 1.5rem;
+    font-size: min(1.5rem, 3vw);
     font-weight: 1000;
     width: fit-content;
 }
@@ -480,6 +497,7 @@ p, h1, h2, h3 {
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
+    font-size: min(1.5rem, 1.5vw);
 }
 
 
@@ -553,7 +571,35 @@ p, h1, h2, h3 {
         display: block;
     }
 
+    #projects {
+        flex-direction: column;
+        height: 95vh;
+    }
+
     .main-container .main-content .project {
-        flex-direction: row;
+        width: 100%;
+        height: 27.5%;
+    }
+
+    .main-container .main-content .project::after {
+        opacity: 1;
+    }
+    
+    .main-container .main-content .project .reveal {
+        display: block;
+        z-index: 1;
+    }
+
+    .navbar {
+        z-index: 99;
+    }
+
+    #education {        
+        flex-direction: column;
+    }
+
+    .main-container .main-content .box {
+        width: 90%;
+        height: 35%;
     }
 }
